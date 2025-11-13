@@ -3,10 +3,10 @@ from plivo import plivoxml
 import plivo
 
 
-AUTH_ID = "MANZJJOGRLNZK0ZMZIMM"
-AUTH_TOKEN = "ODU2MzY0MzkzZDFjN2U0ZjU5Y2U4NGViY2IwMWFh"
-CALLER_ID = "+91 80 3127 4121" 
-FORWARD_NUMBER = "918217044923" 
+AUTH_ID = "YOUR AUTHENTICATION ID"
+AUTH_TOKEN = "YOUR AUTHENTICATION TOKEN"
+CALLER_ID = "YOUR PLIVO NUMBER" 
+FORWARD_NUMBER = "YOUR NUMBER" 
 AUDIO_FILE_URL = "https://s3.amazonaws.com/plivocloud/Trumpet.mp3"
 
 HTML_FORM = """
@@ -173,4 +173,5 @@ def handle_action_choice():
     return Response(r.to_string(), mimetype="text/xml")
 
 if __name__ == '__main__':
+
     app.run(host='0.0.0.0', port=5000)
